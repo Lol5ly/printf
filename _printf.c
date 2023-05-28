@@ -31,9 +31,9 @@ print_buffer(buffer, &buff_ind);
 flags = get_flags(format, &j);
 width = get_width(format, &j, list);
 precision = get_precision(format, &j, list);
-size = get_size(format, &i);
+size = get_size(format, &j);
 ++j;
-printed = handle_print(format, &i, list, buffer,
+printed = handle_print(format, &j, list, buffer,
 flags, width, precision, size);
 if (printed == -1)
 return (-1);

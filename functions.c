@@ -61,7 +61,7 @@ return (width);
 }
 else
 {
-for (j = width - length; j > 0; i--)
+for (j = width - length; j > 0; j--)
 write(1, " ", 1);
 write(1, &str[0], length);
 return (width);
@@ -154,7 +154,7 @@ UNUSED(size);
 n = va_arg(types, unsigned int);
 m = 2147483648; /* (2 ^ 31) */
 a[0] = n / m;
-for (p = 1; p < 32; i++)
+for (p = 1; p < 32; p++)
 {
 m /= 2;
 a[p] = (n / m) % 2;
